@@ -1,0 +1,775 @@
+[
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add hydroponic system",
+    "content_type": [
+      "Luna",
+      "hydroponicsystem"
+    ],
+    "codename": "add_hydroponicsystem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change hydroponic system",
+    "content_type": [
+      "Luna",
+      "hydroponicsystem"
+    ],
+    "codename": "change_hydroponicsystem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete hydroponic system",
+    "content_type": [
+      "Luna",
+      "hydroponicsystem"
+    ],
+    "codename": "delete_hydroponicsystem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view hydroponic system",
+    "content_type": [
+      "Luna",
+      "hydroponicsystem"
+    ],
+    "codename": "view_hydroponicsystem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add reading",
+    "content_type": [
+      "Luna",
+      "reading"
+    ],
+    "codename": "add_reading"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change reading",
+    "content_type": [
+      "Luna",
+      "reading"
+    ],
+    "codename": "change_reading"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete reading",
+    "content_type": [
+      "Luna",
+      "reading"
+    ],
+    "codename": "delete_reading"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view reading",
+    "content_type": [
+      "Luna",
+      "reading"
+    ],
+    "codename": "view_reading"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "add_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "change_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "delete_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "view_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "add_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "change_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "delete_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "view_tokenproxy"
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$BN2jSCUEz81XP64U7DLPGZ$BS9XWZM7T7SO3KU1CMNOZ1UQ1Jdwleu27SYOEpl7J4Q=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "newuser",
+    "first_name": "",
+    "last_name": "",
+    "email": "email@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-02-20T19:45:22.063Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$SMj6jbupPrla9aaQuJ7U46$eXKktMy2Lz4bcN1K7u7UDp9YzpMXQS2amryvzANaHaI=",
+    "last_login": "2025-02-20T19:47:31.133Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-02-20T19:47:28.784Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ilxmo8dsdhjubll1ft3ez617eddfrlvj",
+  "fields": {
+    "session_data": ".eJxVjDsOwyAQBe9CHSG-xqRM7zOgXViCkwhLxq6i3D1YcpG0M_PemwXYtxL2RmuYE7syxS6_DCE-qR4iPaDeFx6Xuq0z8iPhp218WhK9bmf7d1Cglb7WSlqXCZTO5KJBaUgI68GP2RvpkJKPSYHTo3RSDN5otL0FROrQDuzzBdrGN6I:1tlCWB:-izb-rCA1pi7GRbPijCXvglygRoNGkl3VLDy-Vdk5Rc",
+    "expire_date": "2025-03-06T19:47:31.136Z"
+  }
+},
+{
+  "model": "Luna.hydroponicsystem",
+  "pk": 2,
+  "fields": {
+    "owner": [
+      "admin"
+    ],
+    "name": "AdminSystem",
+    "description": "adminssytem",
+    "created_at": "2025-02-20T20:08:55.016Z",
+    "updated_at": "2025-02-20T20:08:55.016Z"
+  }
+},
+{
+  "model": "Luna.hydroponicsystem",
+  "pk": 3,
+  "fields": {
+    "owner": [
+      "newuser"
+    ],
+    "name": "mySystem2",
+    "description": "Mysystem2",
+    "created_at": "2025-02-20T20:11:31.966Z",
+    "updated_at": "2025-02-20T20:22:25.595Z"
+  }
+},
+{
+  "model": "Luna.hydroponicsystem",
+  "pk": 4,
+  "fields": {
+    "owner": [
+      "newuser"
+    ],
+    "name": "mySystem1",
+    "description": "mySystem1",
+    "created_at": "2025-02-20T20:11:58.744Z",
+    "updated_at": "2025-02-20T20:21:56.156Z"
+  }
+},
+{
+  "model": "Luna.reading",
+  "pk": 2,
+  "fields": {
+    "hydroponic_system": 3,
+    "temperature": 12.0,
+    "ph": 12.0,
+    "tds": 33.0,
+    "timestamp": "2025-02-20T20:20:29.797Z"
+  }
+},
+{
+  "model": "Luna.reading",
+  "pk": 3,
+  "fields": {
+    "hydroponic_system": 3,
+    "temperature": 12.0,
+    "ph": 12.0,
+    "tds": 100.0,
+    "timestamp": "2025-02-20T20:20:37.877Z"
+  }
+},
+{
+  "model": "Luna.reading",
+  "pk": 4,
+  "fields": {
+    "hydroponic_system": 4,
+    "temperature": 12.0,
+    "ph": 33.0,
+    "tds": 2000.0,
+    "timestamp": "2025-02-20T20:22:48.347Z"
+  }
+},
+{
+  "model": "Luna.reading",
+  "pk": 5,
+  "fields": {
+    "hydroponic_system": 2,
+    "temperature": 33.0,
+    "ph": 12.0,
+    "tds": 333.0,
+    "timestamp": "2025-02-20T20:23:01.407Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "51f8ed4e459c7e69d5053a6520253487ae92865c",
+  "fields": {
+    "user": [
+      "newuser"
+    ],
+    "created": "2025-02-20T19:45:28.141Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-02-20T19:47:48.837Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "hydroponicsystem"
+    ],
+    "object_id": "1",
+    "object_repr": "system1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-02-20T19:47:59.301Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "reading"
+    ],
+    "object_id": "1",
+    "object_repr": "system1 - 2025-02-20 19:47:59.300276+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-02-20T20:08:55.018Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "hydroponicsystem"
+    ],
+    "object_id": "2",
+    "object_repr": "AdminSystem",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-02-20T20:20:29.799Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "reading"
+    ],
+    "object_id": "2",
+    "object_repr": "MyApiSystem - 2025-02-20 20:20:29.797685+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-02-20T20:20:37.879Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "reading"
+    ],
+    "object_id": "3",
+    "object_repr": "MyApiSystem - 2025-02-20 20:20:37.877907+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-02-20T20:21:56.158Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "hydroponicsystem"
+    ],
+    "object_id": "4",
+    "object_repr": "mySystem1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-02-20T20:22:10.290Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "hydroponicsystem"
+    ],
+    "object_id": "3",
+    "object_repr": "MySystem",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-02-20T20:22:21.586Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "hydroponicsystem"
+    ],
+    "object_id": "3",
+    "object_repr": "MySystem2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-02-20T20:22:25.597Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "hydroponicsystem"
+    ],
+    "object_id": "3",
+    "object_repr": "mySystem2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-02-20T20:22:48.349Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "reading"
+    ],
+    "object_id": "4",
+    "object_repr": "mySystem1 - 2025-02-20 20:22:48.347436+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-02-20T20:23:01.409Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "Luna",
+      "reading"
+    ],
+    "object_id": "5",
+    "object_repr": "AdminSystem - 2025-02-20 20:23:01.407980+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
