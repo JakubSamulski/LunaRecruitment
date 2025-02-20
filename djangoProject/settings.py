@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     "Luna",
     "rest_framework",
     "django_filters",
+    "rest_framework.authtoken",
+    "api_auth",
 ]
 
 MIDDLEWARE = [

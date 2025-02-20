@@ -4,9 +4,7 @@ from Luna.models import HydroponicSystem, Reading
 
 
 class HydroponicSystemSerializer(serializers.HyperlinkedModelSerializer):
-    owner = serializers.PrimaryKeyRelatedField(
-        read_only=True, default=serializers.CurrentUserDefault()
-    )
+    owner = serializers.ReadOnlyField(source="owner.username")
 
     class Meta:
         model = HydroponicSystem
