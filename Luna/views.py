@@ -7,7 +7,6 @@ from .seliarizers import HydroponicSystemSerializer, ReadingSerializer
 
 class IsOwner(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
-        # Allow GET for all (filtered by queryset), write only for owners
         return obj.owner == request.user
 
 
