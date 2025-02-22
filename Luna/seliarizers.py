@@ -12,6 +12,17 @@ class HydroponicSystemSerializer(serializers.HyperlinkedModelSerializer):
         read_only_fields = ["created_at", "updated_at", "owner"]
 
 
+class HydroponicSystemDetailSerializer(HydroponicSystemSerializer):
+    latest_readings = serializers.SerializerMethodField()
+
+    class Meta(HydroponicSystemSerializer.Meta):
+        fields = HydroponicSystemSerializer.Meta.fields + ["latest_readings"]
+
+    def get_latest_readings(self, obj):
+        readings = obj.readings.all().order_by("-timestamp")[:10]
+        return ReadingSerializer(readings, many=True).data
+
+
 class ReadingSerializer(serializers.ModelSerializer):
     hydroponic_system = serializers.PrimaryKeyRelatedField(
         queryset=HydroponicSystem.objects.none()

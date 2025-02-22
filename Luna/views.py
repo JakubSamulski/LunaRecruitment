@@ -1,8 +1,13 @@
+from django.db.models import Prefetch
 from rest_framework import viewsets, permissions
 from django_filters import rest_framework as filters
 from rest_framework import filters as drf_filters
 from .models import HydroponicSystem, Reading
-from .seliarizers import HydroponicSystemSerializer, ReadingSerializer
+from .seliarizers import (
+    HydroponicSystemSerializer,
+    ReadingSerializer,
+    HydroponicSystemDetailSerializer,
+)
 
 
 class IsOwner(permissions.BasePermission):
@@ -14,8 +19,14 @@ class HydroponicSystemViewSet(viewsets.ModelViewSet):
     serializer_class = HydroponicSystemSerializer
     permission_classes = [permissions.IsAuthenticated, IsOwner]
 
+    def get_serializer_class(self):
+        if self.action == "retrieve":
+            return HydroponicSystemDetailSerializer
+        return HydroponicSystemSerializer
+
     def get_queryset(self):
-        return HydroponicSystem.objects.filter(owner=self.request.user)
+        queryset = HydroponicSystem.objects.filter(owner=self.request.user)
+        return queryset
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)

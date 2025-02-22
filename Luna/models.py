@@ -15,7 +15,9 @@ class HydroponicSystem(models.Model):
 
 
 class Reading(models.Model):
-    hydroponic_system = models.ForeignKey(HydroponicSystem, on_delete=models.CASCADE)
+    hydroponic_system = models.ForeignKey(
+        HydroponicSystem, on_delete=models.CASCADE, related_name="readings"
+    )
     temperature = models.FloatField()
     ph = models.FloatField()
     tds = models.FloatField()

@@ -1,4 +1,7 @@
+from datetime import datetime, timedelta
+
 from django.urls import reverse
+from django.utils.timezone import make_aware
 from rest_framework import status
 from rest_framework.test import APITestCase
 from django.contrib.auth import get_user_model
@@ -18,6 +21,7 @@ class HydroponicSystemTests(APITestCase):
         self.client.credentials(HTTP_AUTHORIZATION=f"Token {self.token.key}")
         self.admin_system_pk = 2  # Admin's system (pk=2)
         self.user_system_pk = 3  # User's system (pk=3)
+        self.user_system = HydroponicSystem.objects.get(pk=self.user_system_pk)
 
     def test_create_hydroponic_system(self):
         url = reverse("hydroponic system-list")
@@ -81,6 +85,29 @@ class HydroponicSystemTests(APITestCase):
         self.assertFalse(
             HydroponicSystem.objects.filter(id=self.user_system_pk).exists()
         )
+
+    def test_system_detail_with_readings(self):
+        for i in range(15):
+            Reading.objects.create(
+                hydroponic_system=self.user_system,
+                temperature=20 + i,
+                ph=6.0 + i / 10,
+                tds=500 + i * 10,
+                timestamp=make_aware(datetime.now() - timedelta(hours=15 - i)),
+            )
+
+        response = self.client.get(
+            reverse("hydroponic system-detail", args=[self.user_system_pk])
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data["latest_readings"]), 10)
+        self.assertEqual(
+            response.data["latest_readings"][0]["temperature"], 34.0
+        )  # Najnowszy
+        self.assertEqual(
+            response.data["latest_readings"][-1]["temperature"], 25.0
+        )  # Najstarszy z 10
 
 
 class ReadingTests(APITestCase):
