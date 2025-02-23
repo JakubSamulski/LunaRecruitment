@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     "Luna",
     "rest_framework",
     "django_filters",
+    "rest_framework_swagger",
     "rest_framework.authtoken",
+    "drf_spectacular",
     "api_auth",
 ]
 
@@ -122,6 +124,7 @@ REST_FRAMEWORK = {
     ),
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
 
