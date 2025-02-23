@@ -1,7 +1,8 @@
 from django.db.models import Prefetch
-from rest_framework import viewsets, permissions
 from django_filters import rest_framework as filters
 from rest_framework import filters as drf_filters
+from rest_framework import viewsets, permissions
+
 from .models import HydroponicSystem, Reading
 from .seliarizers import (
     HydroponicSystemSerializer,
@@ -26,6 +27,16 @@ class HydroponicSystemViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         queryset = HydroponicSystem.objects.filter(owner=self.request.user)
+
+        # Eager loading dla wydajności
+        if self.action == "retrieve":
+            queryset = queryset.prefetch_related(
+                Prefetch(
+                    "readings",
+                    queryset=Reading.objects.order_by("-timestamp")[:10],
+                    to_attr="latest_readings",
+                )
+            )
         return queryset
 
     def perform_create(self, serializer):
