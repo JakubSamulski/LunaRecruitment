@@ -14,6 +14,9 @@ class HydroponicSystem(models.Model):
         return self.name
 
 
+# Maybe in real world app it would be better to use some kind of time series database like influxdb
+# as it looks like some sensor data but it was specified to use postgresql
+# but influx does not have django ORM support
 class Reading(models.Model):
     hydroponic_system = models.ForeignKey(
         HydroponicSystem, on_delete=models.CASCADE, related_name="readings"
