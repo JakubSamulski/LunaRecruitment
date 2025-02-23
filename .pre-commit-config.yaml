@@ -15,6 +15,6 @@ repos:
         require_serial: true
         args: [
             "--load-plugins=pylint_django",
-            "--django-settings-module=djangoProject.settings",
+            "--django-settings-module=main.settings",
             "--rcfile=.pylintrc"
           ]
